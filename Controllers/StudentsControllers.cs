@@ -6,7 +6,7 @@ namespace StudentClassManagement.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class nhom3 : ControllerBase
+    public class StudentsController : ControllerBase
     {
         private readonly AppDbContext _context;
 
