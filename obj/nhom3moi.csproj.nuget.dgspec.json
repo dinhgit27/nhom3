@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\nhom3moi\\nhom3moi.csproj": {}
+    "C:\\nhom3moi\\nhom3\\nhom3moi.csproj": {}
   },
   "projects": {
-    "C:\\nhom3moi\\nhom3moi.csproj": {
+    "C:\\nhom3moi\\nhom3\\nhom3moi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\nhom3moi\\nhom3moi.csproj",
+        "projectUniqueName": "C:\\nhom3moi\\nhom3\\nhom3moi.csproj",
         "projectName": "nhom3moi",
-        "projectPath": "C:\\nhom3moi\\nhom3moi.csproj",
+        "projectPath": "C:\\nhom3moi\\nhom3\\nhom3moi.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\nhom3moi\\obj\\",
+        "outputPath": "C:\\nhom3moi\\nhom3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -38,6 +38,16 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
