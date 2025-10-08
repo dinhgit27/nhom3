@@ -11,10 +11,10 @@ namespace StudentManagementApi.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Student>()
-                .HasOne(s => s.Class)
-                .WithMany(c => c.Students)
-                .HasForeignKey(s => s.ClassId)
+            modelBuilder.Entity<Student>()// Cấu hình cho entity Student
+                .HasOne(s => s.Class)// Student có 1 Class
+                .WithMany(c => c.Students)// Class có nhiều Student
+                .HasForeignKey(s => s.ClassId)// ClassId là khóa ngoại
                 .OnDelete(DeleteBehavior.Cascade);  // Xóa sinh viên khi xóa lớp
         }
     }
