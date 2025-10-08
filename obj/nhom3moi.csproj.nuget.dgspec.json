@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\nhom3local\\nhom3\\nhom3moi.csproj": {}
+    "C:\\nhom3moi\\nhom3\\nhom3moi.csproj": {}
   },
   "projects": {
-    "C:\\nhom3local\\nhom3\\nhom3moi.csproj": {
+    "C:\\nhom3moi\\nhom3\\nhom3moi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\nhom3local\\nhom3\\nhom3moi.csproj",
+        "projectUniqueName": "C:\\nhom3moi\\nhom3\\nhom3moi.csproj",
         "projectName": "nhom3moi",
-        "projectPath": "C:\\nhom3local\\nhom3\\nhom3moi.csproj",
+        "projectPath": "C:\\nhom3moi\\nhom3\\nhom3moi.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\nhom3local\\nhom3\\obj\\",
+        "outputPath": "C:\\nhom3moi\\nhom3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -63,8 +63,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -76,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.428\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.136\\RuntimeIdentifierGraph.json"
         }
       }
     }
