@@ -1,27 +1,46 @@
+using Microsoft.EntityFrameworkCore;
+using StudentManagementApi.Models;
+
+var builder = WebApplication.CreateBuilder(args); 
+// Tạo WebApplicationBuilder: đọc config (appsettings, env vars, command line),
+// khởi tạo DI container (builder.Services), logging, và web host defaults.
+
+// Add services
+builder.Services.AddControllers();               // Đăng ký MVC controllers (API controllers)
+builder.Services.AddEndpointsApiExplorer();      // Dùng để khám phá endpoints cho Swagger/OpenAPI
+builder.Services.AddSwaggerGen();                // Thêm Swashbuckle (Swagger generator) cho API doc
+
+// EF Core
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+// Lấy chuỗi kết nối từ appsettings.json (hoặc env vars)
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-var builder = WebApplication.CreateBuilder(args);
+    options.UseSqlServer(connectionString));
+// Đăng ký AppDbContext với DI container, dùng SQL Server provider.
+// (Cần using Microsoft.EntityFrameworkCore và package Microsoft.EntityFrameworkCore.SqlServer)
 
-// Add services to the container.
+// Optional: enable CORS for testing
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+        policy.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
+});
+// Đăng ký chính sách CORS tên "AllowAll" cho phép mọi origin/header/method (chỉ nên dùng cho dev)
 
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
+// Build app (tạo WebApplication từ builder)
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwagger();      // Middleware: sinh swagger.json
+    app.UseSwaggerUI();    // Middleware: giao diện swagger (UI)
 }
 
-app.UseHttpsRedirection();
+app.UseHttpsRedirection();   // Middleware: redirect HTTP -> HTTPS
+app.UseCors("AllowAll");     // Áp dụng CORS policy (phải gọi trước MapControllers)
+app.UseAuthorization();      // Middleware: kiểm tra [Authorize] (cần AddAuthentication nếu có auth)
+app.MapControllers();        // Bật routing cho các controller với attribute routing
 
-app.UseAuthorization();
+// (Thiếu app.Run(); để start host — nhớ gọi app.Run() ở cuối)
 
-app.MapControllers();
 
 app.Run();

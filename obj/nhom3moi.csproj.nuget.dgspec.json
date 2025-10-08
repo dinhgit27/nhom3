@@ -1,31 +1,17 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\nhom3moi\\nhom3\\nhom3moi.csproj": {}
+    "C:\\nhom3local\\nhom3\\nhom3moi.csproj": {}
   },
   "projects": {
-    "C:\\nhom3moi\\nhom3\\nhom3moi.csproj": {
+    "C:\\nhom3local\\nhom3\\nhom3moi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\nhom3moi\\nhom3\\nhom3moi.csproj",
+        "projectUniqueName": "C:\\nhom3local\\nhom3\\nhom3moi.csproj",
         "projectName": "nhom3moi",
-        "projectPath": "C:\\nhom3moi\\nhom3\\nhom3moi.csproj",
+        "projectPath": "C:\\nhom3local\\nhom3\\nhom3moi.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\nhom3moi\\nhom3\\obj\\",
-=======
-    "C:\\nhom3tienanh\\nhom3\\nhom3moi.csproj": {}
-  },
-  "projects": {
-    "C:\\nhom3tienanh\\nhom3\\nhom3moi.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\nhom3tienanh\\nhom3\\nhom3moi.csproj",
-        "projectName": "nhom3moi",
-        "projectPath": "C:\\nhom3tienanh\\nhom3\\nhom3moi.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\nhom3tienanh\\nhom3\\obj\\",
->>>>>>> origin/Anh_tt_bai_tap_giua_ki
+        "outputPath": "C:\\nhom3local\\nhom3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -52,11 +38,6 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-<<<<<<< HEAD
-            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
-              "target": "Package",
-              "version": "[12.0.1, )"
-=======
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.*, )"
@@ -64,13 +45,12 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.*, )"
->>>>>>> origin/Anh_tt_bai_tap_giua_ki
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.9, )"
+              "version": "[6.*, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

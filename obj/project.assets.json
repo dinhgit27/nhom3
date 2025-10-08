@@ -2,36 +2,20 @@
   "version": 3,
   "targets": {
     "net6.0": {
-<<<<<<< HEAD
-      "AutoMapper/12.0.1": {
+      "Humanizer.Core/2.8.26": {
         "type": "package",
-        "dependencies": {
-          "Microsoft.CSharp": "4.7.0"
-        },
         "compile": {
-          "lib/netstandard2.1/AutoMapper.dll": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.1/AutoMapper.dll": {}
+          "lib/netstandard2.0/Humanizer.dll": {
+            "related": ".xml"
+          }
         }
       },
-      "AutoMapper.Extensions.Microsoft.DependencyInjection/12.0.1": {
-        "type": "package",
-        "dependencies": {
-          "AutoMapper": "[12.0.1]",
-          "Microsoft.Extensions.Options": "6.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
-        }
-      },
-      "Microsoft.CSharp/4.7.0": {
-=======
       "Microsoft.CSharp/4.5.0": {
->>>>>>> origin/Anh_tt_bai_tap_giua_ki
         "type": "package",
         "compile": {
           "ref/netcoreapp2.0/_._": {}
@@ -40,8 +24,6 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
-<<<<<<< HEAD
-=======
       "Microsoft.Data.SqlClient/2.1.7": {
         "type": "package",
         "dependencies": {
@@ -145,6 +127,26 @@
           "lib/netstandard2.0/_._": {}
         }
       },
+      "Microsoft.EntityFrameworkCore.Design/6.0.36": {
+        "type": "package",
+        "dependencies": {
+          "Humanizer.Core": "2.8.26",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.36"
+        },
+        "compile": {
+          "lib/net6.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.Design.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/net6.0/Microsoft.EntityFrameworkCore.Design.props": {}
+        }
+      },
       "Microsoft.EntityFrameworkCore.Relational/6.0.36": {
         "type": "package",
         "dependencies": {
@@ -182,9 +184,17 @@
           }
         }
       },
->>>>>>> origin/Anh_tt_bai_tap_giua_ki
-      "Microsoft.EntityFrameworkCore.Tools/9.0.9": {
-        "type": "package"
+      "Microsoft.EntityFrameworkCore.Tools/6.0.36": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Design": "6.0.36"
+        },
+        "compile": {
+          "lib/net6.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0/_._": {}
+        }
       },
       "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
         "type": "package",
@@ -197,15 +207,6 @@
           "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.targets": {}
         }
       },
-<<<<<<< HEAD
-      "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
-        },
-        "runtime": {
-          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
-=======
       "Microsoft.Extensions.Caching.Abstractions/6.0.1": {
         "type": "package",
         "dependencies": {
@@ -288,37 +289,11 @@
           "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
             "related": ".xml"
           }
->>>>>>> origin/Anh_tt_bai_tap_giua_ki
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-<<<<<<< HEAD
-      "Microsoft.Extensions.Options/6.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
-          "Microsoft.Extensions.Primitives": "6.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.1/Microsoft.Extensions.Options.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.1/Microsoft.Extensions.Options.dll": {}
-        }
-      },
-      "Microsoft.Extensions.Primitives/6.0.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
-        },
-        "compile": {
-          "lib/net6.0/Microsoft.Extensions.Primitives.dll": {}
-        },
-        "runtime": {
-          "lib/net6.0/Microsoft.Extensions.Primitives.dll": {}
-=======
       "Microsoft.Extensions.Logging/6.0.1": {
         "type": "package",
         "dependencies": {
@@ -383,14 +358,11 @@
           "lib/net6.0/Microsoft.Extensions.Primitives.dll": {
             "related": ".xml"
           }
->>>>>>> origin/Anh_tt_bai_tap_giua_ki
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-<<<<<<< HEAD
-=======
       "Microsoft.Identity.Client/4.21.1": {
         "type": "package",
         "compile": {
@@ -510,7 +482,6 @@
           "lib/netstandard1.0/_._": {}
         }
       },
->>>>>>> origin/Anh_tt_bai_tap_giua_ki
       "Microsoft.OpenApi/1.2.3": {
         "type": "package",
         "compile": {
@@ -636,15 +607,6 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-<<<<<<< HEAD
-      "System.Runtime.CompilerServices.Unsafe/6.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {}
-        },
-        "runtime": {
-          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {}
-=======
       "System.Collections.Immutable/6.0.1": {
         "type": "package",
         "compile": {
@@ -656,13 +618,10 @@
           "lib/net6.0/System.Collections.Immutable.dll": {
             "related": ".xml"
           }
->>>>>>> origin/Anh_tt_bai_tap_giua_ki
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
-<<<<<<< HEAD
-=======
       },
       "System.Configuration.ConfigurationManager/4.7.0": {
         "type": "package",
@@ -903,51 +862,30 @@
             "rid": "win"
           }
         }
->>>>>>> origin/Anh_tt_bai_tap_giua_ki
       }
     }
   },
   "libraries": {
-<<<<<<< HEAD
-    "AutoMapper/12.0.1": {
-      "sha512": "hvV62vl6Hp/WfQ24yzo3Co9+OPl8wH8hApwVtgWpiAynVJkUcs7xvehnSftawL8Pe8FrPffBRM3hwzLQqWDNjA==",
+    "Humanizer.Core/2.8.26": {
+      "sha512": "OiKusGL20vby4uDEswj2IgkdchC1yQ6rwbIkZDVBPIR6al2b7n3pC91elBul9q33KaBgRKhbZH3+2Ur4fnWx2A==",
       "type": "package",
-      "path": "automapper/12.0.1",
+      "path": "humanizer.core/2.8.26",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "README.md",
-        "automapper.12.0.1.nupkg.sha512",
-        "automapper.nuspec",
-        "icon.png",
-        "lib/netstandard2.1/AutoMapper.dll",
-        "lib/netstandard2.1/AutoMapper.xml"
+        "humanizer.core.2.8.26.nupkg.sha512",
+        "humanizer.core.nuspec",
+        "lib/netstandard1.0/Humanizer.dll",
+        "lib/netstandard1.0/Humanizer.xml",
+        "lib/netstandard2.0/Humanizer.dll",
+        "lib/netstandard2.0/Humanizer.xml",
+        "logo.png"
       ]
     },
-    "AutoMapper.Extensions.Microsoft.DependencyInjection/12.0.1": {
-      "sha512": "+g/K+Vpe3gGMKGzjslMOdqNlkikScDjWfVvmWTayrDHaG/n2pPmFBMa+jKX1r/h6BDGFdkyRjAuhFE3ykW+r1g==",
-      "type": "package",
-      "path": "automapper.extensions.microsoft.dependencyinjection/12.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
-        "automapper.extensions.microsoft.dependencyinjection.nuspec",
-        "icon.png",
-        "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll"
-      ]
-    },
-    "Microsoft.CSharp/4.7.0": {
-      "sha512": "pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
-      "type": "package",
-      "path": "microsoft.csharp/4.7.0",
-=======
     "Microsoft.CSharp/4.5.0": {
       "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
       "type": "package",
       "path": "microsoft.csharp/4.5.0",
->>>>>>> origin/Anh_tt_bai_tap_giua_ki
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -960,10 +898,6 @@
         "lib/netcoreapp2.0/_._",
         "lib/netstandard1.3/Microsoft.CSharp.dll",
         "lib/netstandard2.0/Microsoft.CSharp.dll",
-<<<<<<< HEAD
-        "lib/netstandard2.0/Microsoft.CSharp.xml",
-=======
->>>>>>> origin/Anh_tt_bai_tap_giua_ki
         "lib/portable-net45+win8+wp8+wpa81/_._",
         "lib/uap10.0.16299/_._",
         "lib/win8/_._",
@@ -973,11 +907,7 @@
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
-<<<<<<< HEAD
-        "microsoft.csharp.4.7.0.nupkg.sha512",
-=======
         "microsoft.csharp.4.5.0.nupkg.sha512",
->>>>>>> origin/Anh_tt_bai_tap_giua_ki
         "microsoft.csharp.nuspec",
         "ref/MonoAndroid10/_._",
         "ref/MonoTouch10/_._",
@@ -1020,8 +950,6 @@
         "version.txt"
       ]
     },
-<<<<<<< HEAD
-=======
     "Microsoft.Data.SqlClient/2.1.7": {
       "sha512": "dSdlcXPszeOjjDX9a0buMFgYqKrI5bTxdSgX3JyCa+OL80NUstJSxOJr0j9oOn8mpP5PgWeRC2bVf/Zf2Cjv+g==",
       "type": "package",
@@ -1152,6 +1080,21 @@
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
+    "Microsoft.EntityFrameworkCore.Design/6.0.36": {
+      "sha512": "r9dwblLaEPSdHocaouGINBxfqPJieOCs4Z44gMXuWBCrlnfuteoXGp3lSZXtifSZCLdOcFMoUHpDgpSrk9CDmg==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.design/6.0.36",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "build/net6.0/Microsoft.EntityFrameworkCore.Design.props",
+        "lib/net6.0/Microsoft.EntityFrameworkCore.Design.dll",
+        "lib/net6.0/Microsoft.EntityFrameworkCore.Design.xml",
+        "microsoft.entityframeworkcore.design.6.0.36.nupkg.sha512",
+        "microsoft.entityframeworkcore.design.nuspec"
+      ]
+    },
     "Microsoft.EntityFrameworkCore.Relational/6.0.36": {
       "sha512": "Vq9UQEFNU1t42AOSgz6bUe0fpMa1g4wO8Y7EfhYPX6VSriRSRB4ImTC2TEZjOUeyGcZyUI2Kyd6//RfUPUR+Pw==",
       "type": "package",
@@ -1180,18 +1123,17 @@
         "microsoft.entityframeworkcore.sqlserver.nuspec"
       ]
     },
->>>>>>> origin/Anh_tt_bai_tap_giua_ki
-    "Microsoft.EntityFrameworkCore.Tools/9.0.9": {
-      "sha512": "Q8n1PXXJApa1qX8HI3r/YuHoJ1HuLwjI2hLqaCV9K9pqQhGpi6Z38laOYwL2ElUOTWCxTKMDEMMYWfPlw6rwgg==",
+    "Microsoft.EntityFrameworkCore.Tools/6.0.36": {
+      "sha512": "zBo/oepzDsoXCwfE4mwxzA3lBrYMtfpmkQ1rmtQnuvaORY6yCeVIx4Vpr/ENz3DShuHiNYr7c1ClBSZleW78Dw==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.tools/9.0.9",
+      "path": "microsoft.entityframeworkcore.tools/6.0.36",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
-        "docs/PACKAGE.md",
-        "microsoft.entityframeworkcore.tools.9.0.9.nupkg.sha512",
+        "lib/net6.0/_._",
+        "microsoft.entityframeworkcore.tools.6.0.36.nupkg.sha512",
         "microsoft.entityframeworkcore.tools.nuspec",
         "tools/EntityFrameworkCore.PS2.psd1",
         "tools/EntityFrameworkCore.PS2.psm1",
@@ -1199,9 +1141,9 @@
         "tools/EntityFrameworkCore.psm1",
         "tools/about_EntityFrameworkCore.help.txt",
         "tools/init.ps1",
-        "tools/net472/any/ef.exe",
-        "tools/net472/win-arm64/ef.exe",
-        "tools/net472/win-x86/ef.exe",
+        "tools/net461/any/ef.exe",
+        "tools/net461/win-arm64/ef.exe",
+        "tools/net461/win-x86/ef.exe",
         "tools/netcoreapp2.0/any/ef.dll",
         "tools/netcoreapp2.0/any/ef.runtimeconfig.json"
       ]
@@ -1437,8 +1379,6 @@
         "tools/netcoreapp2.1/System.Diagnostics.DiagnosticSource.dll"
       ]
     },
-<<<<<<< HEAD
-=======
     "Microsoft.Extensions.Caching.Abstractions/6.0.1": {
       "sha512": "zEtKmOJ3sZ9YxRgvgLtoQsqO069Kqp0aC6Ai+DkyE5uahtu1ynvuoDVFQgyyhVcJWnxCzZHax/3AodvAx2mhjA==",
       "type": "package",
@@ -1521,7 +1461,6 @@
         "useSharedDesignerContext.txt"
       ]
     },
->>>>>>> origin/Anh_tt_bai_tap_giua_ki
     "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0": {
       "sha512": "xlzi2IYREJH3/m6+lUrQlujzX8wDitm4QGnUu6kUXTQAWPuZY8i+ticFJbzfqaetLA6KR/rO6Ew/HuYD+bxifg==",
       "type": "package",
@@ -1547,12 +1486,6 @@
         "useSharedDesignerContext.txt"
       ]
     },
-<<<<<<< HEAD
-    "Microsoft.Extensions.Options/6.0.0": {
-      "sha512": "dzXN0+V1AyjOe2xcJ86Qbo233KHuLEY0njf/P2Kw8SfJU+d45HNS2ctJdnEnrWbM9Ye2eFgaC5Mj9otRMU6IsQ==",
-      "type": "package",
-      "path": "microsoft.extensions.options/6.0.0",
-=======
     "Microsoft.Extensions.Logging/6.0.1": {
       "sha512": "k6tbYaHrqY9kq7p5FfpPbddY1OImPCpXQ/PGcED6N9s5ULRp8n1PdmMzsIwIzCnhIS5bs06G/lO9LfNVpUj8jg==",
       "type": "package",
@@ -1630,7 +1563,6 @@
       "sha512": "v5rh5jRcLBOKOaLVyYCm4TY/RoJlxWsW7N2TAPkmlHe55/0cB0Syp979x4He1+MIXsaTvJl1WOc7b1D1PSsO3A==",
       "type": "package",
       "path": "microsoft.extensions.options/6.0.1",
->>>>>>> origin/Anh_tt_bai_tap_giua_ki
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1643,26 +1575,15 @@
         "lib/netstandard2.0/Microsoft.Extensions.Options.xml",
         "lib/netstandard2.1/Microsoft.Extensions.Options.dll",
         "lib/netstandard2.1/Microsoft.Extensions.Options.xml",
-<<<<<<< HEAD
-        "microsoft.extensions.options.6.0.0.nupkg.sha512",
-=======
         "microsoft.extensions.options.6.0.1.nupkg.sha512",
->>>>>>> origin/Anh_tt_bai_tap_giua_ki
         "microsoft.extensions.options.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-<<<<<<< HEAD
-    "Microsoft.Extensions.Primitives/6.0.0": {
-      "sha512": "9+PnzmQFfEFNR9J2aDTfJGGupShHjOuGw4VUv+JB044biSHrnmCIMD+mJHmb2H7YryrfBEXDurxQ47gJZdCKNQ==",
-      "type": "package",
-      "path": "microsoft.extensions.primitives/6.0.0",
-=======
     "Microsoft.Extensions.Primitives/6.0.1": {
       "sha512": "zyJfttJduuQbGEsd/TgerUEdgzHgUn/6oFgeaE04DKUMs7bbzckV7Ci1QZxf/VyQAlG41gR/GjecEScuYoHCUg==",
       "type": "package",
       "path": "microsoft.extensions.primitives/6.0.1",
->>>>>>> origin/Anh_tt_bai_tap_giua_ki
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1679,17 +1600,11 @@
         "lib/netcoreapp3.1/Microsoft.Extensions.Primitives.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Primitives.xml",
-<<<<<<< HEAD
-        "microsoft.extensions.primitives.6.0.0.nupkg.sha512",
-=======
         "microsoft.extensions.primitives.6.0.1.nupkg.sha512",
->>>>>>> origin/Anh_tt_bai_tap_giua_ki
         "microsoft.extensions.primitives.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-<<<<<<< HEAD
-=======
     "Microsoft.Identity.Client/4.21.1": {
       "sha512": "vycgk7S/HAbHaUaK4Tid1fsWHsXdFRRP2KavAIOHCVV27zvuQfYAjXmMvctuuF4egydSumG58CwPZob3gWeYgQ==",
       "type": "package",
@@ -1894,7 +1809,6 @@
         "version.txt"
       ]
     },
->>>>>>> origin/Anh_tt_bai_tap_giua_ki
     "Microsoft.OpenApi/1.2.3": {
       "sha512": "Nug3rO+7Kl5/SBAadzSMAVgqDlfGjJZ0GenQrLywJ84XGKO0uRqkunz5Wyl0SDwcR71bAATXvSdbdzPrYRYKGw==",
       "type": "package",
@@ -2078,39 +1992,16 @@
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
     },
-<<<<<<< HEAD
-    "System.Runtime.CompilerServices.Unsafe/6.0.0": {
-      "sha512": "/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
-      "type": "package",
-      "path": "system.runtime.compilerservices.unsafe/6.0.0",
-=======
     "System.Collections.Immutable/6.0.1": {
       "sha512": "Cc+SfP+jyCmA1TnRnDA7cRZy5jbLyWodfuUJKDJ+PJZBwWkv8szz+ztSCHAonqnL01DRaHaS2ptc4bYIEdgvWw==",
       "type": "package",
       "path": "system.collections.immutable/6.0.1",
->>>>>>> origin/Anh_tt_bai_tap_giua_ki
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
-<<<<<<< HEAD
-        "buildTransitive/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
-        "lib/net461/System.Runtime.CompilerServices.Unsafe.xml",
-        "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "lib/net6.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll",
-        "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.xml",
-        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
-        "system.runtime.compilerservices.unsafe.nuspec",
-        "useSharedDesignerContext.txt"
-      ]
-=======
         "buildTransitive/netcoreapp2.0/System.Collections.Immutable.targets",
         "buildTransitive/netcoreapp3.1/_._",
         "lib/net461/System.Collections.Immutable.dll",
@@ -2566,18 +2457,13 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
->>>>>>> origin/Anh_tt_bai_tap_giua_ki
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-<<<<<<< HEAD
-      "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
-=======
       "Microsoft.EntityFrameworkCore >= 6.*",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.*",
->>>>>>> origin/Anh_tt_bai_tap_giua_ki
-      "Microsoft.EntityFrameworkCore.Tools >= 9.0.9",
+      "Microsoft.EntityFrameworkCore.Tools >= 6.*",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
@@ -2587,19 +2473,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\nhom3moi\\nhom3\\nhom3moi.csproj",
+      "projectUniqueName": "C:\\nhom3local\\nhom3\\nhom3moi.csproj",
       "projectName": "nhom3moi",
-      "projectPath": "C:\\nhom3moi\\nhom3\\nhom3moi.csproj",
+      "projectPath": "C:\\nhom3local\\nhom3\\nhom3moi.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\nhom3moi\\nhom3\\obj\\",
-=======
-      "projectUniqueName": "C:\\nhom3tienanh\\nhom3\\nhom3moi.csproj",
-      "projectName": "nhom3moi",
-      "projectPath": "C:\\nhom3tienanh\\nhom3\\nhom3moi.csproj",
-      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\nhom3tienanh\\nhom3\\obj\\",
->>>>>>> origin/Anh_tt_bai_tap_giua_ki
+      "outputPath": "C:\\nhom3local\\nhom3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -2626,11 +2504,6 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
-<<<<<<< HEAD
-          "AutoMapper.Extensions.Microsoft.DependencyInjection": {
-            "target": "Package",
-            "version": "[12.0.1, )"
-=======
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[6.*, )"
@@ -2638,13 +2511,12 @@
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[6.*, )"
->>>>>>> origin/Anh_tt_bai_tap_giua_ki
           },
           "Microsoft.EntityFrameworkCore.Tools": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",
-            "version": "[9.0.9, )"
+            "version": "[6.*, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
